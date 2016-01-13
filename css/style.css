@@ -1,0 +1,201 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+  margin: 0;
+}
+
+.main-nav {
+   margin-top: 5px;
+}
+
+
+
+.name a,
+.main-nav a {
+  display: block;
+	text-align: center;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.col {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.headline {
+   margin-bottom: 0;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+  text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+  margin-top: 50px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .name a,
+  .main-nav a {
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tagline {
+    font-size: 1.4em;
+  }
+
+  .primary {
+    width: 50%;
+    float: right;
+  }
+
+  .secondary {
+    width: 50%;
+    float: left;
+  }
+
+  .tertiary {
+    float: left;
+  }
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+
+
+@media (min-width: 1025px) {
+  
+  .container {
+    width: 80%;
+		max-width: 1150px;
+		margin: 0 auto;
+  }
+
+  .primary {
+    width: 40%;
+    float: left; 
+  }
+
+  .secondary {
+    width: 30%;
+    float: left;
+  }
+
+  .tertiary {
+    width: 30%;
+    float: left;
+  }
+
+  .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
